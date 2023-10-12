@@ -1,7 +1,7 @@
 import React from 'react';
 import { useParams } from 'react-router-dom';
 import { usePlayerStats } from '../hooks/usePlayerStats';
-import './statStyles.css'; // Import the CSS file for styling
+import './statStyles.css';
 
 export default function Stats() {
     const { playerName } = useParams();
@@ -15,9 +15,7 @@ export default function Stats() {
         return <div>Error: {error.message}</div>;
     }
 
-    // Remove the stats you don't need for the grid
     const filteredStats = {
-        userName: stats.userName,
         rank: stats.rank,
         scorePerMinute: stats.scorePerMinute,
         killsPerMinute: stats.killsPerMinute,
