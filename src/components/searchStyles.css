@@ -1,0 +1,46 @@
+.search-main {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    gap: 10px;
+    height: 100vh;
+    text-align: center;
+    background-color: #ebf0f5
+}
+
+.header {
+    font-size: 100px;
+}
+
+.search-bar {
+    display: flex;
+    width: 30%;
+    /* This is 50% of the main which is 100% of the height and width */
+    align-self: center;
+    height: 5%;
+}
+
+input {
+    border-top-left-radius: 10px;
+    border-bottom-left-radius: 10px;
+    width: 80%;
+    font-size: 26px;
+    padding-left: 10px;
+    border-right: none;
+    border-bottom: 2px solid black;
+    outline: none;
+}
+
+button {   
+    background-color: lightsteelblue;
+    width: 20%;
+    font-size: 26px;
+    border-left: 2px solid black;
+    border-top-right-radius: 10px;
+    border-bottom-right-radius: 10px;
+}
+
+button:hover {
+    scale: calc(1.05);
+    cursor: pointer;
+}
